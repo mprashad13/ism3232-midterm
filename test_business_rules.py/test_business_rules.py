@@ -139,3 +139,9 @@ def test_format_license_line():
     result = format_license_line("Pine Books", 260.00, False, False)
 
     assert result == ("Pine Books: $260.00 | contract review: no | trainer: no")
+
+
+def test_format_license_line_with_review_and_trainer():
+    result = format_license_line("Summit College", 6300.00, True, True)
+
+    assert result == ("Summit College: $6300.00 | contract review: yes | trainer: yes")
