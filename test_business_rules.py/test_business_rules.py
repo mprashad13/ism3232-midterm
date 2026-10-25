@@ -138,6 +138,4 @@ def test_largest_license():
 def test_format_license_line():
     result = format_license_line("Pine Books", 260.00, False, False)
 
-    assert result == (
-        "Pine Books: $260.00 | contract review: no | trainer: no"
-    )
+    assert result == ("Pine Books: $260.00 | contract review: no | trainer: no")
